@@ -5,11 +5,9 @@
 
 using namespace std;
 
-class Car
-{
+class Car {
 public:
     Car();
-
 
     string getBrand() const;
     void setBrand(const string &newBrand);
@@ -22,12 +20,10 @@ public:
 
     void printData();
 
-
 private:
     string brand;
     string model;
     int yearmodel;
-
 };
 
 #endif // CAR_H
