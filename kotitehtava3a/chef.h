@@ -4,10 +4,8 @@
 
 using namespace std;
 
-class Chef
-{
+class Chef {
 protected:
-
     string name;
 
 public:
@@ -15,11 +13,10 @@ public:
 
     Chef(string n);
     ~Chef();
+    string getName() const; // Metodi nimen palauttamiseen
 
-
-    void  makeSalad();
+    void makeSalad();
     void makeSoup();
-
 };
 
 #endif // CHEF_H

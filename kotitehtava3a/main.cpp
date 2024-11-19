@@ -1,15 +1,22 @@
 #include "chef.h"
+#include "italianchef.h"
 #include <iostream>
 
 using namespace std;
 
-int main()
-{
+int main() {
 
-    Chef objectChef;
-    Chef objChef("Gordon Ramsay");
-    objectChef.makeSalad();
+    Chef objectChef("Gordon Ramsay");
+
+    ItalianChef objItalianChef("Anthony Bourdain");
+
+    objectChef.makeSalad(); // kutsutaan metodeita makeSalad ja makeSoup
     objectChef.makeSoup();
+
+    objItalianChef.makeSalad();
+    objItalianChef.makeSoup();
+    objItalianChef.makePasta();
+    objItalianChef.getName();
 
     return 0;
 }
