@@ -7,9 +7,7 @@
 #include <iostream>
 using namespace std;
 
-
-class Car
-{
+class Car {
 
 private:
     Engine objEngine;
@@ -23,21 +21,19 @@ private:
 public:
     Car();
 
-    Car(const std::string& b, const std::string& m); // Parametrillinen konstruktori
+    Car(const std::string &b,
+        const std::string &m); // Parametrillinen konstruktori
 
     void setEngine(); // Asettaa moottorin tiedot
     void setWheels(); // Asettaa kaikkien renkaiden tiedot
 
     std::string getModel() const;
-    void setModel(const std::string& m);
+    void setModel(const std::string &m);
 
     std::string getBrand() const;
-    void setBrand(const std::string& b);
+    void setBrand(const std::string &b);
 
     void printDetails() const; // Tulostaa auton tiedot
-
-
 };
-
 
 #endif // CAR_H

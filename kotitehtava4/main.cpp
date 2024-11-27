@@ -1,11 +1,9 @@
-#include <iostream>
 #include "car.h"
-
+#include <iostream>
 
 using namespace std;
 
-int main()
-{
+int main() {
 
     Car toyota("Toyota", "Corolla");
 
@@ -14,4 +12,3 @@ int main()
 
     toyota.printDetails();
 }
-
